@@ -1,0 +1,149 @@
+.container {
+  /* border: 2px solid red; */
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  color: #d7c9ff;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #c4b5ff;
+}
+
+.subtitle {
+  color: #a592ff;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.tocSection {
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c4b5ff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tocGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* untuk TOC
+.tocCard {
+  padding: 15px 25px;
+  background-color: #1a1240;
+  border: 1px solid #3a2a72;
+  border-radius: 10px;
+  color: #c7b4ff;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.tocCard:hover {
+  background-color: #251b57;
+  border-color: #5d46c0;
+}
+*/
+
+.timeline {
+  margin-top: 40px;
+  position: relative;
+}
+
+.timelineContainer::before {
+  /* border: 2px solid red; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: #a988ff;
+  opacity: 0.7;
+}
+
+.timelineContainer {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  width: 50%;
+  padding: 30px;
+}
+
+.item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  padding-right: 15pt;
+}
+
+.item:nth-child(even) {
+  left: 50%;
+  padding-left: 15pt;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d8c6ff;
+}
+
+.detail {
+  color: #b8a2ff;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.open {
+  max-height: 2000px; /* cukup besar supaya muat semua */
+}
+
+.sectionTitle:hover {
+  opacity: 0.7;
+}
+
+.timelineSection {
+  margin-bottom: 80px;
+}
+
+.circle {
+  /* border: 2px solid red; */
+  width: 10px;
+  height: 10px;
+  background: #a988ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 7px);
+  z-index: 2;
+}
+
+.content {
+  background: #1a1333;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3b2a69;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
