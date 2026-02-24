@@ -59,6 +59,14 @@ export const skillCategories = [
     title: "Tools",
     items: [
       {
+        name: "Microsoft Office",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Office_365_app_logos.svg",
+      },
+      {
+        name: "Google Editors",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Google_Docs_Editors_logo.png",
+      },
+      {
         name: "Git / GitHub",
         icon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
       },

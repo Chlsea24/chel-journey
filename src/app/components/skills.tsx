@@ -8,6 +8,7 @@ export default function Skills() {
   return (
     <section id="skills" className={styles.skills}>
       <h2 className={styles.title}>Skills</h2>
+      <h3 className={styles.text}>Wish this section would full of cards!</h3>
 
       <div className={styles.wrapper}>
         {skillCategories.map((cat, i) => (

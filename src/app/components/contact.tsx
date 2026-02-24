@@ -7,7 +7,7 @@ import { contactData } from "@/data/contact_me";
 export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
-      <h2 className={styles.title}>Get in Touch</h2>
+      <h2 className={styles.title}>Let's get in Touch!</h2>
 
       <div className={styles.list}>
         {contactData.map((item, i) => (

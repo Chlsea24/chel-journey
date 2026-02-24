@@ -1,4 +1,3 @@
-import Header from "./components/header";
 import Hero from "./components/hero"; // 'Hero' is the function name
 import About from "./components/about";
 import Timeline from "./components/timeline";

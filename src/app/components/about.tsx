@@ -21,7 +21,7 @@ export default function About() {
         transition={{ duration: 1 }}
         className={styles.text}
       >
-        I'm Solveig — a computer vision enthusiast exploring AI, machine
+        The name is Chelsea — a technology enthusiast exploring AI, machine
         learning, and modern web technologies. I enjoy building things that look
         clean, work smoothly, and solve real problems.
       </motion.p>
@@ -32,8 +32,7 @@ export default function About() {
         transition={{ duration: 1.2 }}
         className={styles.text}
       >
-        Currently working on a thesis about stroke vs Bell’s palsy
-        differentiation using facial landmarks. I love blending science, design,
+        Worked on my undergraduate thesis and currently open to an internship or full-time job! I love blending science, design,
         and engineering into projects that feel meaningful.
       </motion.p>
     </section>

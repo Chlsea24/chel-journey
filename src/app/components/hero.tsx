@@ -12,7 +12,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className={styles.title}
       >
-        你好！我叫 <span className={styles.highlight}>Solveig</span>
+        你好！我叫 <span className={styles.highlight}>Chelsea</span>
       </motion.h1>
 
       <motion.p
@@ -21,17 +21,17 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className={styles.subtitle}
       >
-        Building things with AI, Computer Vision, and clean design.
+        Bachelor of Informatics who eager to learn many things!
         很高兴认识你！
       </motion.p>
 
       <motion.a
-        href="#contact"
+        href="#skills"
         className={styles.button}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        Contact Me
+        My Skills
       </motion.a>
     </section>
   );
