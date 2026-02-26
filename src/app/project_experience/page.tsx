@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { projects, Category } from "@/data/project_detail";
 import ProjectCard from "@/app/components/projectcard";
 import styles from "./project_experience.module.css";
@@ -29,6 +30,11 @@ export default function ProjectExperiencePage() {
     (b.featured ? 1 : 0) - (a.featured ? 1 : 0)
   );
 
+  const getCount = (category: Category | "All") => {
+    if (category === "All") return projects.length;
+    return projects.filter((p) => p.category === category).length;
+  };
+
   return (
     <section className={styles.container}>
       {/* Header */}
@@ -41,25 +47,38 @@ export default function ProjectExperiencePage() {
 
       {/* Tabs */}
       <div className={styles.tabs}>
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={`${styles.tabButton} ${
-              activeCategory === cat ? styles.activeTab : ""
-            }`}
-            onClick={() => setActiveCategory(cat)}
-          >
-            {cat}
-          </button>
-        ))}
+        {categories.map((cat) => {
+          const count = getCount(cat);
+
+          return (
+            <button
+              key={cat}
+              className={`${styles.tabButton} ${
+                activeCategory === cat ? styles.activeTab : ""
+              }`}
+              onClick={() => setActiveCategory(cat)}
+            >
+              {cat} <span className={styles.counter}>({count})</span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Project Grid */}
-      <div className={styles.grid}>
-        {sortedProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeCategory}
+          className={styles.grid}
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -15 }}
+          transition={{ duration: 0.3 }}
+        >
+          {sortedProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 }

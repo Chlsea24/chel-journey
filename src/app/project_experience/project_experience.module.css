@@ -1,5 +1,5 @@
 .container {
-  padding: 40px 20px;
+  padding: 80px 20px; 
   max-width: 1100px;
   margin: auto;
   color: #d7c9ff;
@@ -7,18 +7,29 @@
 
 .headerSection {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: #c4b5ff;
+  letter-spacing: 0.5px;
+}
+
+.counter {
+  opacity: 0.6;
+  margin-left: 4px;
+  font-size: 0.8rem;
 }
 
 .subtitle {
   color: #a592ff;
   margin-top: 10px;
   font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 /* Tabs */
@@ -26,8 +37,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 40px;
+  gap: 14px;
+  margin-bottom: 50px;
 }
 
 .tabButton {
@@ -53,9 +64,10 @@
 
 /* Project Card */
 .grid {
+  /* border: 2px solid red; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .card {
