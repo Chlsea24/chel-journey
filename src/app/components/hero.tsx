@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import styles from "../styles/hero.module.css";
 
 export default function Hero() {
@@ -21,18 +22,29 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className={styles.subtitle}
       >
-        Bachelor of Informatics who eager to learn many things!
+        Bachelor of Informatics who eager to work on my Skills!
         很高兴认识你！
       </motion.p>
 
-      <motion.a
-        href="#skills"
-        className={styles.button}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        My Skills
-      </motion.a>
-    </section>
+      <div className={styles.buttonGroup}>
+        <motion.a
+          href="#skills"
+          className={styles.button}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          My Skills
+        </motion.a>
+
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Link href="/project_experience" className={styles.buttonSecondary}>
+            Project Experience
+          </Link>
+        </motion.div>
+      </div>
+      </section>
   );
 }

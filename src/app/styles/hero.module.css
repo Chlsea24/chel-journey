@@ -28,8 +28,17 @@
   margin-top: 1rem;
 }
 
+.buttonGroup {
+  /* border: 2px solid red; */
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* biar responsive di mobile */
+}
+
 .button {
-  margin: 2.5rem auto 0;
   padding: 0.8rem 2rem;
   background: #6d28d9;
   border-radius: 10px;
@@ -43,4 +52,26 @@
 .button:hover {
   background: #a855f7;
   box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+}
+
+.buttonSecondary {
+  padding: 0.8rem 2rem;
+
+  background: transparent;
+  border: 1.5px solid #8b5cf6;
+
+  border-radius: 10px;
+  color: #c4b5ff;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.buttonSecondary:hover {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: #a855f7;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.25);
+  color: #ffffff;
 }
