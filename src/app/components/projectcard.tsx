@@ -1,4 +1,7 @@
-import styles from "@/app/project_experience/project_experience.module.css";
+"use client";
+
+import { useState } from "react";
+import styles from "@/app/styles/projectcard.module.css";
 import { Project } from "@/data/project_detail";
 
 type Props = {
@@ -6,20 +9,99 @@ type Props = {
 };
 
 export default function ProjectCard({ project }: Props) {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <div className={styles.card}>
-      <h3 className={styles.projectTitle}>{project.title}</h3>
+    <div className={`${styles.projectCard} ${expanded ? styles.expanded : ""}`}>
+    {project.featured && <span className={styles.badge}>Featured</span>}
 
-      <div className={styles.meta}>
-        {project.year} • {project.semester} <br />
-        Role: {project.role} • Team of {project.teamSize}
-      </div>
-
-      <p>{project.overview}</p>
-
-      <div className={styles.techStack}>
-        {project.techStack.join(" • ")}
-      </div>
+    <div className={styles.header}>
+      <h3>{project.title}</h3>
+      <p className={styles.meta}>
+        {project.year} • {project.semester}
+      </p>
     </div>
+
+    <p className={styles.role}>
+      {project.role} • Team of {project.teamSize}
+    </p>
+
+    <p className={styles.overview}>
+      {expanded
+        ? project.overview
+        : `${project.overview.slice(0, 120)}...`}
+    </p>
+
+    <div className={styles.techStack}>
+      {project.techStack.slice(0, 4).map((tech) => (
+        <span key={tech} className={styles.chip}>
+          {tech}
+        </span>
+      ))}
+      {project.techStack.length > 4 && (
+        <span className={styles.moreTech}>
+          +{project.techStack.length - 4}
+        </span>
+      )}
+    </div>
+
+    {expanded && (
+      <div className={styles.expandedContent}>
+        {project.contributions.length > 0 && (
+          <div className={styles.section}>
+            <h4>Key Contributions</h4>
+            <ul>
+              {project.contributions.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {project.impact && (
+          <div className={styles.section}>
+            <h4>Impact</h4>
+            <ul>
+              {project.impact.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {project.links && (
+          <div className={styles.links}>
+            {project.links.github && (
+              <a href={project.links.github} target="_blank">
+                GitHub
+              </a>
+            )}
+            {project.links.demo && (
+              <a href={project.links.demo} target="_blank">
+                Live Demo
+              </a>
+            )}
+            {project.links.figma && (
+              <a href={project.links.figma} target="_blank">
+                Figma
+              </a>
+            )}
+            {project.links.video && (
+              <a href={project.links.video} target="_blank">
+                Video
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+    )}
+
+    <button
+      className={styles.toggleButton}
+      onClick={() => setExpanded(!expanded)}
+    >
+      {expanded ? "Show Less ↑" : "Show Details ↓"}
+    </button>
+  </div>
   );
 }

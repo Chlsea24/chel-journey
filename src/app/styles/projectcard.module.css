@@ -1,0 +1,121 @@
+.projectCard {
+  background: #2e234e; /* lebih terang dari halaman #241d4d */
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #5a3dbd; /* lebih terang dari border halaman */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* depth */
+  transition: all 0.25s ease;
+  position: relative;
+  color: #e0d7ff; /* sedikit lebih terang dari teks halaman */
+}
+
+.projectCard:hover {
+  transform: translateY(-6px);
+  border-color: #b18fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #b18fff;
+  color: #1a1333;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.header h3 {
+  font-size: 1.25rem;
+  color: #f0ebff;
+  margin-bottom: 4px;
+}
+
+.meta {
+  font-size: 0.82rem;
+  color: #cbbaff;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 0.85rem;
+  color: #d0c0ff;
+  margin-bottom: 10px;
+}
+
+.overview {
+  font-size: 0.85rem;
+  color: #d2c3ff;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.techStack {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  background: #3b2a6a;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: #c7b4ff;
+}
+
+.moreTech {
+  font-size: 0.75rem;
+  color: #d7c9ff;
+  opacity: 0.7;
+}
+
+.expandedContent {
+  margin-top: 1rem;
+  animation: fadeIn 0.25s ease;
+  font-size: 0.82rem;
+  color: #d7c9ff;
+}
+
+.section h4 {
+  font-size: 0.88rem;
+  color: #cbbaff;
+  margin-bottom: 0.4rem;
+}
+
+.links a {
+  color: #b18fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toggleButton {
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto; /* push ke kanan */
+  background: none;  /* no fill */
+  color: #b18fff;    /* warna utama */
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.toggleButton:hover {
+  color: #d0b3ff;    /* highlight on hover */
+  transform: translateX(3px); /* subtle move for interactivity */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
