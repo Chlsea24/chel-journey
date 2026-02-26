@@ -78,9 +78,10 @@ export default function ProjectCard({ project }: Props) {
             )}
             {project.links.demo && (
               <a href={project.links.demo} target="_blank">
-                Live Demo
+                APK
               </a>
             )}
+            |
             {project.links.figma && (
               <a href={project.links.figma} target="_blank">
                 Figma

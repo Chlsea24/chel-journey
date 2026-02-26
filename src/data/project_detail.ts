@@ -40,160 +40,187 @@ export type Project = {
 };
 
 
-// Dummy Project Data
+// Project Data
 export const projects: Project[] = [
-  {
-    id: "dummy-00",
-    title: "Under Development",
-    category: "Other",
-
-    year: "2026",
-    semester: "",
-    teamSize: 1,
-    role: "Front-End Engineer",
-
-    overview:
-      "This page is under development. Stay tune for updates!",
-
-    contributions: [
-      "xxx"
-    ],
-
-    techStack: [],
-
-    impact: [
-    ],
-
-    links: {
-      github: "https://github.com/Chlsea24"
-    },
-
-    featured: true
-  },
   /*
   {
-    id: "stroke-bells-classification",
-    title: "Stroke vs Bell’s Palsy Classification",
-    category: "Computer Vision",
+    id: "civic-video",
+    title: "Civic Project: Short Inspirational Video",
+    category: "Multimedia",
 
-    year: "2025",
-    semester: "Final Year",
-    teamSize: 1,
-    role: "Machine Learning Engineer",
+    year: "2023",
+    semester: "2nd Semester",
+    teamSize: 7,
+    role: "Scriptwriter, Director, Editor",
 
     overview:
-      "A computer vision system designed to differentiate Stroke and Bell’s Palsy using facial asymmetry analysis and classical machine learning.",
+      "A short inspirational video for university student, created as a Civic Project.",
 
     contributions: [
-      "Designed facial landmark normalization pipeline",
-      "Engineered asymmetry-based numerical features",
-      "Implemented SVM with RBF kernel",
-      "Performed GridSearch hyperparameter tuning",
-      "Evaluated model using accuracy, precision, recall, and confusion matrix"
+      "Wrote all scripts and dialogues for each team member as Scriptwriter",
+      "Directed actors and cameramen during filming as Director",
+      "Edited raw footage into the final video as Editor"
     ],
 
-    techStack: ["Python", "MediaPipe", "Scikit-learn", "SVM", "GridSearch"],
+    techStack: ["Filmora", "Video Editing", "Director"],
 
     impact: [
-      "Achieved 91% classification accuracy",
-      "Improved baseline model performance by 12%"
+      "Enhanced teamwork and multimedia production management skills"
     ],
 
     links: {
       github: "https://github.com/your-repo-link"
     },
 
-    featured: true
-  },
+    featured: false
+  },*/
 
   {
-    id: "xxx-prediction",
-    title: "Retail Sales Prediction Model",
-    category: "Machine Learning",
+    id: "benkyoo-app",
+    title: "Benkyoo - Japanese Learning App",
+    category: "UI/UX",
 
     year: "2024",
     semester: "4th Semester",
-    teamSize: 3,
-    role: "Data Analyst & ML Engineer",
+    teamSize: 7,
+    role: "Core Team Member / Project Lead",
 
     overview:
-      "A predictive model built to analyze sales patterns across outlet types and forecast future performance.",
+      "A prototype Japanese learning application developed as a college final exam project for Human-Computer Interaction. The project aims to design an engaging Japanese language recognition system for early teens, offering interactive and gamified features that motivate continuous learning.",
 
     contributions: [
-      "Performed exploratory data analysis in Excel and Python",
-      "Engineered categorical and numerical features",
-      "Built regression and classification models",
-      "Compared model performance using cross-validation"
+      "Designed high-fidelity components and wireframes in Figma",
+      "Collaborated with core team members to design the application prototype",
+      "Presented monthly development updates to the course instructor and class",
+      "Led discussions on business plans, unique features, and key design elements",
+      "Coordinated team activities and ensured project quality through quality checks"
     ],
 
-    techStack: ["Python", "Pandas", "Scikit-learn", "Excel"],
+    techStack: ["Figma", "User Research", "Wireframing", "High-Fidelity Prototyping"],
 
     impact: [
-      "Identified top-performing outlet types",
-      "Improved prediction stability through feature selection"
+      "Created an interactive and gamified learning experience to engage early teen learners",
+      "Enhanced motivation and interest in learning Japanese using technology-based methods",
+      "Improved team collaboration, quality control, and prototyping skills"
     ],
 
     links: {
-      github: "https://github.com/your-repo-link"
-    }
+      figma: "https://www.figma.com/design/TOQynZKNWdVjPkHWTCURsD/Salinan_EduLearn-Mobile-UI-Kit?node-id=7-211&t=kSZ04z16yyNoHmjV-1"    }
   },
 
   {
-    id: "Dadang-Galaxy",
-    title: "3D Platformer Adventure Game",
+    id: "Dadang-Snowhill",
+    title: "AR App: Dadang Snowhill",
     category: "Game Development",
 
-    year: "2023",
-    semester: "3rd Semester",
-    teamSize: 2,
-    role: "Game Programmer",
+    year: "2024",
+    semester: "5th Semester",
+    teamSize: 4,
+    role: "AR Unity Programmer",
 
     overview:
-      "A 2D side-scrolling platformer game prototype developed as a team project with physics-based mechanics.",
+      "College final exam project in Markerless VR/AR programming, involving the design and development of AR app, Dadang Snowhill, focusing on interactive missions, obstacles, and engaging UI.",
 
     contributions: [
-      "Implemented player movement and physics system",
-      "Developed enemy AI behavior scripts",
-      "Integrated scoring and health systems",
-      "Optimized gameplay performance"
+      "Collaborated with the team to plan the storyline, missions, obstacles, UI design, and project report",
+      "Developed the entire program and application build, ensuring the apps ran as planned",
+      "Presented the final results to the course instructor and the class with the team"
     ],
 
-    techStack: ["Unity", "C#", "Game Design Principles"],
+    techStack: ["Unity", "C#", "AR Foundation", "Visual Studio"],
 
     links: {
-      demo: "https://your-game-demo-link"
+      demo: "https://drive.google.com/file/d/1xmVjWhKSMj4Vw8ORHTKVhVe3qOQHOkAZ/view?usp=drive_link",
+      video: "https://drive.google.com/file/d/18gpQ-WQJqXnhfKXyr3EC6-0DSmJfYRlM/view?usp=drive_link"
     },
 
-    featured: true
+    featured: false
   },
 
   {
-    id: "mobile-app-ui-design",
-    title: "Mobile Health App UI/UX Design",
+    id: "hanzigo-app",
+    title: "HanziGo - Chinese Learning App",
     category: "UI/UX",
 
-    year: "2023",
-    semester: "3rd Semester",
-    teamSize: 2,
-    role: "UI Designer",
+    year: "2025",
+    semester: "6th Semester",
+    teamSize: 6,
+    role: "UI/UX Designer",
 
     overview:
-      "A user-centered mobile health tracking app prototype designed with accessibility and usability principles.",
+      "Designed the prototype of HanziGo, a Chinese learning application, as a college final exam project, focusing on intuitive user experience and interactive features.",
 
     contributions: [
-      "Conducted user persona research",
-      "Designed wireframes and interactive prototype",
-      "Applied accessibility-focused color system",
-      "Improved navigation flow based on feedback"
+      "Improved navigation flow based on feedback",
+      "Designed components, wireframes and interactive prototype",
+      "Collaborated with core team members to design the application prototype",
+      "Led discussions on business plans, unique features, and other key elements",
+      "Presented monthly development updates to the course instructor and class with the team"      
     ],
 
-    techStack: ["Figma", "User Research", "Wireframing"],
+    techStack: ["Figma", "User Research", "Wireframing", "High-Fidelity Prototyping"],
 
     links: {
-      figma: "https://figma-link.com"
+      figma: "https://www.figma.com/proto/5RSkeEfDRxvNDHvcD2FH52/HanziGo?node-id=490-7040&p=f&t=LtRDSHQW4heCCi3e-0&scaling=scale-down&content-scaling=fixed&page-id=490%3A6068&starting-point-node-id=490%3A7040&show-proto-sidebar=1"
     }
   },
 
+  {
+    id: "Asylum-333-project",
+    title: "3D Offline Game: Asylum 333",
+    category: "Game Development",
+
+    year: "2025",
+    semester: "6th Semester",
+    teamSize: 2,
+    role: "Game Programmer & Designer",
+
+    overview:
+      "Developed offline local games as college Final Assignment project, focusing on engaging storylines, missions, obstacles, and interactive UI design.",
+
+    contributions: [
+      "Planned the storyline, missions, obstacles, UI design, and project report collaboratively with a partner",
+      "Developed the complete program and animations, ensuring smooth gameplay",
+      "Presented the final games to the course instructor and classmates with the partner"
+    ],
+
+    techStack: ["Unity 3D", "C#", "Game Architecture"],
+    
+    impact: ["Successfully completed a college-level game project demonstrating full development workflow"],
+    links: {
+      demo: "https://drive.google.com/file/d/1sWIDl7hu5cPGa-AqmKn-CWIrA1SgU3Wx/view?usp=drive_link",
+      video: "https://drive.google.com/file/d/1HnW32BAmr67XgLOkS_-6PwnZ6YBIjsAB/view?usp=drive_link"
+    }
+  },
+
+  {
+    id: "Temple-333-project",
+    title: "3D Offline Game: Temple 333",
+    category: "Game Development",
+
+    year: "2025",
+    semester: "6th Semester",
+    teamSize: 2,
+    role: "Game Programmer & Designer",
+
+    overview:
+      "Developed offline local games as college Final Exam project, focusing on engaging storylines, missions, obstacles, and interactive UI design.",
+
+    contributions: [
+      "Planned the storyline, missions, obstacles, UI design, and project report collaboratively with a partner",
+      "Developed the complete program and animations, ensuring smooth gameplay",
+      "Presented the final games to the course instructor and classmates with the partner"
+    ],
+
+    techStack: ["Unity 3D", "C#", "Game Architecture"],
+    
+    impact: ["Successfully completed a college-level game project demonstrating full development workflow"],
+    links: {
+      demo: "https://drive.google.com/file/d/1nrLJeu9bFzVVXzGCRMK2UvXiTUgy8id_/view?usp=drive_link",
+      video: "https://drive.google.com/file/d/1jZLcidz-VABK3PLQIKCnVd-vTgp2RMpU/view?usp=drive_link"
+    }
+  },
+/*
   {
     id: "portfolio-website",
     title: "Personal Portfolio Website",
@@ -219,29 +246,6 @@ export const projects: Project[] = [
     links: {
       demo: "https://your-portfolio-link.com"
     }
-  },
-
-  {
-    id: "game-localization-project",
-    title: "Indie Game Localization",
-    category: "Translation",
-
-    year: "2022",
-    semester: "2nd Semester",
-    teamSize: 5,
-    role: "Game Translator",
-
-    overview:
-      "Localized in-game dialogues and UI text from English to Indonesian for an indie RPG project.",
-
-    contributions: [
-      "Translated over 500 in-game dialogue lines",
-      "Ensured cultural adaptation accuracy",
-      "Maintained terminology consistency",
-      "Collaborated with narrative designer"
-    ],
-
-    techStack: ["Localization", "Game Narrative Design"]
   },
 
   {
