@@ -14,7 +14,8 @@ const categories: (Category | "All")[] = [
   "UI/UX",
   "Web Development",
   "Translation",
-  "Multimedia"
+  "Multimedia",
+  "Other"
 ];
 
 export default function ProjectExperiencePage() {
@@ -41,7 +42,8 @@ export default function ProjectExperiencePage() {
       <div className={styles.headerSection}>
         <h1 className={styles.title}>Project Experience</h1>
         <p className={styles.subtitle}>
-          Selected works across machine learning, game development, design, and multimedia.
+          This page is under development. Stay tune for updates!
+          {/* Selected works across machine learning, game development, design, and multimedia. */}
         </p>
       </div>
 

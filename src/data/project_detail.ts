@@ -6,7 +6,8 @@ export type Category =
   | "Machine Learning"
   | "Game Development"
   | "Translation"
-  | "Multimedia";
+  | "Multimedia"
+  | "Other";
 
 
 // Project Type Definition
@@ -41,6 +42,35 @@ export type Project = {
 
 // Dummy Project Data
 export const projects: Project[] = [
+  {
+    id: "dummy-00",
+    title: "Under Development",
+    category: "Other",
+
+    year: "2026",
+    semester: "",
+    teamSize: 1,
+    role: "Front-End Engineer",
+
+    overview:
+      "This page is under development. Stay tune for updates!",
+
+    contributions: [
+      "xxx"
+    ],
+
+    techStack: [],
+
+    impact: [
+    ],
+
+    links: {
+      github: "https://github.com/Chlsea24"
+    },
+
+    featured: true
+  },
+  /*
   {
     id: "stroke-bells-classification",
     title: "Stroke vs Bell’s Palsy Classification",
@@ -109,7 +139,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "3D Game: Dadang Galaxy",
+    id: "Dadang-Galaxy",
     title: "3D Platformer Adventure Game",
     category: "Game Development",
 
@@ -239,5 +269,5 @@ export const projects: Project[] = [
     links: {
       video: "https://youtube-link.com"
     }
-  }
+  } */
 ]
