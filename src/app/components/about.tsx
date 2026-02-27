@@ -22,7 +22,7 @@ export default function About() {
         className={styles.text}
       >
         The name is Chelsea — a technology enthusiast exploring AI, machine
-        learning, and modern web technologies. I enjoy building things that look
+        learning, Game-AR-VR Dev, and Web technologies. I enjoy building things that look
         clean, work smoothly, and solve real problems.
       </motion.p>
 
@@ -33,7 +33,7 @@ export default function About() {
         className={styles.text}
       >
         Worked on my undergraduate thesis and currently open to an internship or full-time job! I love blending science, design,
-        and engineering into projects that feel meaningful.
+        and engineering into projects that feel meaningful and bring the real impact.
       </motion.p>
     </section>
   );

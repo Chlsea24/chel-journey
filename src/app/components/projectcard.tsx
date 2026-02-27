@@ -69,31 +69,21 @@ export default function ProjectCard({ project }: Props) {
           </div>
         )}
 
+        {/* HYPERLINKs */}
         {project.links && (
-          <div className={styles.links}>
-            {project.links.github && (
-              <a href={project.links.github} target="_blank">
-                GitHub
-              </a>
-            )}
-            {project.links.demo && (
-              <a href={project.links.demo} target="_blank">
-                APK
-              </a>
-            )}
-            |
-            {project.links.figma && (
-              <a href={project.links.figma} target="_blank">
-                Figma
-              </a>
-            )}
-            {project.links.video && (
-              <a href={project.links.video} target="_blank">
-                Video
-              </a>
-            )}
-          </div>
-        )}
+        <div className={styles.links}>
+          {Object.entries(project.links)
+            .filter(([, url]) => url)
+            .map(([label, url], index, array) => (
+              <span key={label}>
+                <a href={url} target="_blank">
+                  {label.charAt(0).toUpperCase() + label.slice(1)}
+                </a>
+                {index < array.length - 1 && " | "}
+              </span>
+            ))}
+        </div>
+      )}
       </div>
     )}
 

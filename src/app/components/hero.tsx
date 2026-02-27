@@ -41,7 +41,7 @@ export default function Hero() {
           whileTap={{ scale: 0.95 }}
         >
           <Link href="/project_experience" className={styles.buttonSecondary}>
-            Project Experience
+            Project Experiences
           </Link>
         </motion.div>
       </div>
