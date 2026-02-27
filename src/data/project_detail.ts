@@ -331,7 +331,7 @@ export const projects: Project[] = [
     ],
 
     links: {
-      app: "https://chel-journey.vercel.app/"
+      web: "https://chel-journey.vercel.app/"
     }
   },
 
