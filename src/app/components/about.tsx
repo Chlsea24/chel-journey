@@ -21,9 +21,9 @@ export default function About() {
         transition={{ duration: 1 }}
         className={styles.text}
       >
-        The name is Chelsea — a technology enthusiast exploring AI, machine
-        learning, Game-AR-VR Dev, and Web technologies. I enjoy building things that look
-        clean, work smoothly, and solve real problems.
+        The name is Chelsea — a technology enthusiast exploring AI,
+        machine learning, Game&AR Dev, and Web technologies.
+        I enjoy building solutions that are clean, intuitive, and impactful.
       </motion.p>
 
       <motion.p
@@ -32,8 +32,21 @@ export default function About() {
         transition={{ duration: 1.2 }}
         className={styles.text}
       >
-        Worked on my undergraduate thesis and currently open to an internship or full-time job! I love blending science, design,
-        and engineering into projects that feel meaningful and bring the real impact.
+        I have completed my undergraduate thesis and am currently
+        open to internship or full-time opportunities.
+        I’m passionate about blending science, design, and engineering
+        to create technology that truly makes a difference.
+      </motion.p>
+
+      <motion.p
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.2 }}
+        className={styles.text}
+      >
+        UI/UX Design? I’m in. | 
+        Game Development? Let’s build it. | 
+        Machine Learning & Computer Vision? Absolutely.
       </motion.p>
     </section>
   );

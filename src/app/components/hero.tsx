@@ -22,8 +22,8 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className={styles.subtitle}
       >
-        Bachelor of Informatics who eager to work on my Skills!
-        很高兴认识你！
+        Informatics graduate passionate about building and improving technical solutions.
+        很高兴认识你
       </motion.p>
 
       <div className={styles.buttonGroup}>
