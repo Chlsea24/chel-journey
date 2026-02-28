@@ -44,9 +44,9 @@ export default function About() {
         transition={{ duration: 1.2 }}
         className={styles.text}
       >
-        UI/UX Design? I’m in. | 
-        Game Development? Let’s build it. | 
-        Machine Learning & Computer Vision? Absolutely.
+        Ownership? Yes. |
+        Collaboration? Definitely. |
+        Constructive feedback and discussion? Absolutely.
       </motion.p>
     </section>
   );
